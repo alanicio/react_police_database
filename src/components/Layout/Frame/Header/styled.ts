@@ -1,16 +1,33 @@
 import styled from "styled-components";
 
-export const HeaderContainer = styled.header`
+interface Props {
+   isSidebarClosed: boolean;
+}
+
+export const HeaderContainer = styled.header<Props>`
    background-color: ${({ theme }) => theme.background.color1};
    position: fixed;
    top: 0;
-   left: 0;
-   width: 100%;
+   right: 0;
+   transition: width 0.8s;
+   width: ${({ isSidebarClosed }: Props) =>
+      isSidebarClosed ? "100%" : "calc(100% - 270px)"};
    display: flex;
    align-items: center;
-   padding: 12px 1.5vw;
+   padding-right: 1.5vw;
    box-sizing: border-box;
    color: ${({ theme }) => theme.text.color1};
+   .sidebar-icon {
+      margin-right: 40px;
+      transition: transform 0.8s;
+      height: 73px;
+      display: flex;
+      align-items: center;
+      box-sizing: border-box;
+      padding: 0 1.5vw;
+      ${({ isSidebarClosed }: Props) =>
+         isSidebarClosed ? "transform: rotateY(180deg);" : null}
+   }
    .police-logo {
       width: 50px;
       margin-right: 1vw;
