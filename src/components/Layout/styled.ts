@@ -13,7 +13,7 @@ export const Content = styled.div`
    height: 100%;
    max-width: 100%;
    max-height: 100%;
-   padding-top: 88px;
+   padding-top: 73px;
    box-sizing: border-box;
    .content-scroll {
       width: 100%;

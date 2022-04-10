@@ -3,7 +3,7 @@ import Header from "./Header";
 import Sidebar from "./Sidebar";
 
 const Frame = () => {
-   const [isSidebarClosed, setIsSidebarClosed] = useState<boolean>(false);
+   const [isSidebarClosed, setIsSidebarClosed] = useState<boolean>(true);
    return (
       <>
          <Header {...{ isSidebarClosed, setIsSidebarClosed }} />
