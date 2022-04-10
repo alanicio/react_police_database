@@ -1,3 +1,10 @@
+import {
+   faHandcuffs,
+   faHouse,
+   faPerson,
+   faScaleBalanced,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Link } from "react-router-dom";
 import { SidebarState } from "../../../../interfaces/SidebarState";
@@ -10,18 +17,30 @@ const Sidebar = ({ isSidebarClosed, setIsSidebarClosed }: SidebarState) => {
          onMouseLeave={() => setIsSidebarClosed(true)}
          isSidebarClosed={isSidebarClosed}
       >
-         <Menu>
+         <Menu isSidebarClosed={isSidebarClosed}>
             <li>
-               <Link to="/">Home</Link>
+               <Link to="/">
+                  <FontAwesomeIcon icon={faHouse} className="icon" />
+                  <p>Home</p>
+               </Link>
             </li>
             <li>
-               <Link to="citizens">Citizens</Link>
+               <Link to="citizens">
+                  <FontAwesomeIcon icon={faPerson} className="icon" />
+                  <p>Citizens</p>
+               </Link>
             </li>
             <li>
-               <Link to="polices">Polices</Link>
+               <Link to="polices">
+                  <FontAwesomeIcon icon={faScaleBalanced} className="icon" />
+                  <p>Polices</p>
+               </Link>
             </li>
             <li>
-               <Link to="criminals">Criminals</Link>
+               <Link to="criminals">
+                  <FontAwesomeIcon icon={faHandcuffs} className="icon" />
+                  <p>Criminals</p>
+               </Link>
             </li>
          </Menu>
       </SidebarContainer>

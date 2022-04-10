@@ -24,7 +24,7 @@ export const HeaderContainer = styled.header<Props>`
       display: flex;
       align-items: center;
       box-sizing: border-box;
-      padding: 0 1.5vw;
+      padding: 0 22px;
       ${({ isSidebarClosed }: Props) =>
          isSidebarClosed ? "transform: rotateY(180deg);" : null}
    }
