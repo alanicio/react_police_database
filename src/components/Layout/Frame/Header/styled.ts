@@ -11,7 +11,7 @@ export const HeaderContainer = styled.header<Props>`
    right: 0;
    transition: width 0.8s;
    width: ${({ isSidebarClosed }: Props) =>
-      isSidebarClosed ? "100%" : "calc(100% - 270px)"};
+      isSidebarClosed ? "100%" : "calc(100% - 200px)"};
    display: flex;
    align-items: center;
    padding-right: 1.5vw;
@@ -26,7 +26,7 @@ export const HeaderContainer = styled.header<Props>`
       box-sizing: border-box;
       padding: 0 22px;
       ${({ isSidebarClosed }: Props) =>
-         isSidebarClosed ? "transform: rotateY(180deg);" : null}
+         isSidebarClosed ? null : "transform: rotateY(180deg);"}
    }
    .police-logo {
       width: 50px;

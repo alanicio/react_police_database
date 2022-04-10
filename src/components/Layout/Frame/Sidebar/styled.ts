@@ -5,7 +5,7 @@ interface Props {
 }
 
 export const SidebarContainer = styled.div`
-   height: 100%;
+   height: calc(100%-73px);
    background-color: black;
    transition: width 0.8s, min-width 0.8s, max-width 0.8s;
    overflow: hidden;
@@ -13,7 +13,7 @@ export const SidebarContainer = styled.div`
    width: ${({ isSidebarClosed }: Props) =>
       isSidebarClosed
          ? `width: 71.5px;min-width:71.5px;max-width:71.5px`
-         : `width: 270px;min-width:270px;max-width:270px`};
+         : `width: 200px;min-width:200px;max-width:200px`};
 `;
 
 export const Menu = styled.ul`
