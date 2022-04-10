@@ -20,25 +20,33 @@ const Sidebar = ({ isSidebarClosed, setIsSidebarClosed }: SidebarState) => {
          <Menu isSidebarClosed={isSidebarClosed}>
             <li>
                <Link to="/">
-                  <FontAwesomeIcon icon={faHouse} className="icon" />
+                  <div className="icon-container">
+                     <FontAwesomeIcon icon={faHouse} className="icon" />
+                  </div>
                   <p>Home</p>
                </Link>
             </li>
             <li>
                <Link to="citizens">
-                  <FontAwesomeIcon icon={faPerson} className="icon" />
+                  <div className="icon-container">
+                     <FontAwesomeIcon icon={faPerson} className="icon" />
+                  </div>
                   <p>Citizens</p>
                </Link>
             </li>
             <li>
                <Link to="polices">
-                  <FontAwesomeIcon icon={faScaleBalanced} className="icon" />
+                  <div className="icon-container">
+                     <FontAwesomeIcon icon={faScaleBalanced} className="icon" />
+                  </div>
                   <p>Polices</p>
                </Link>
             </li>
             <li>
                <Link to="criminals">
-                  <FontAwesomeIcon icon={faHandcuffs} className="icon" />
+                  <div className="icon-container">
+                     <FontAwesomeIcon icon={faHandcuffs} className="icon" />
+                  </div>
                   <p>Criminals</p>
                </Link>
             </li>

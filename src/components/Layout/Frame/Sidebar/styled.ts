@@ -20,16 +20,28 @@ export const Menu = styled.ul`
    list-style-type: none;
    display: flex;
    flex-direction: column;
-   align-items: center;
    margin: 0;
    padding: 0;
    a {
       text-decoration: none;
       display: flex;
       align-items: center;
+      width: fit-content;
       &:visited {
          color: inherit;
       }
+      &:hover {
+         color: ${({ theme }) => theme.action.hover1};
+      }
+   }
+   .icon-container {
+      width: 71.5px;
+      max-width: 71.5px;
+      min-width: 71.5px;
+      height: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
    }
    p {
       margin-left: 15px;

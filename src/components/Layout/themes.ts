@@ -10,4 +10,7 @@ export const defaultTheme = {
       );`,
       color1: "black",
    },
+   action: {
+      hover1: "#B02E2E",
+   },
 };
