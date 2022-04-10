@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const HeaderContainer = styled.header`
-   background-color: black;
+   background-color: ${({ theme }) => theme.background.color1};
    position: fixed;
    top: 0;
    left: 0;
@@ -10,7 +10,7 @@ export const HeaderContainer = styled.header`
    align-items: center;
    padding: 12px 1.5vw;
    box-sizing: border-box;
-   color: white;
+   color: ${({ theme }) => theme.text.color1};
    .police-logo {
       width: 50px;
       margin-right: 1vw;
