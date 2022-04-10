@@ -31,3 +31,29 @@ h4 {
    margin: 0;
    padding: 0;
 }
+
+/* width */
+::-webkit-scrollbar {
+   width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+   background: rgb(22, 46, 69);
+   background: linear-gradient(
+      360deg,
+      rgba(22, 46, 69, 1) 0%,
+      rgba(24, 67, 106, 1) 100%
+   );
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+   background: white;
+   border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+   background: #cedffa;
+}
