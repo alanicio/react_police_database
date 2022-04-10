@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { HeaderContainer } from "./styled";
-import LogoPolice from "../../../assets/logos/LogoPolice.png";
+import LogoPolice from "../../../../assets/logos/LogoPolice.png";
 
 const Header = () => {
    const [search, setSearch] = useState<string>("");
@@ -12,10 +12,11 @@ const Header = () => {
    return (
       <HeaderContainer>
          <img src={LogoPolice} alt="police" className="police-logo" />
-         <p>
+         {/*  <p>
             This software is just to demostrate my skill as developer, please
             don't take it as real or legitimate
-         </p>
+         </p> */}
+         <h4>Police Database</h4>
          <label htmlFor="search">Find in population:</label>
          <input
             type="text"

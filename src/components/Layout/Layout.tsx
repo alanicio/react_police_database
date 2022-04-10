@@ -1,13 +1,17 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import Header from "./Header";
-import { Main } from "./styled";
+import Frame from "./Frame";
+import { Content, Main } from "./styled";
 
 const Layout = () => {
    return (
       <Main>
-         <Header />
-         <Outlet />
+         <Frame />
+         <Content>
+            <div className="content-scroll">
+               <Outlet />
+            </div>
+         </Content>
       </Main>
    );
 };
