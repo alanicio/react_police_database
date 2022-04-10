@@ -33,7 +33,6 @@ export const HeaderContainer = styled.header<Props>`
       margin-right: 1vw;
    }
    input {
-      padding: 5px;
       margin-left: 10px;
    }
    label {
